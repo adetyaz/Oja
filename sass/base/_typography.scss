@@ -1,0 +1,197 @@
+.heading {
+    // animation: moveUp 2s cubic-bezier(.17, .67, .71, .8);
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
+    &__intro {
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--color-white);
+        position: absolute;
+        top: 55%;
+        left: 30%;
+        @include respond(tab-port) {
+            top: 24%;
+            left: 23%;
+        }
+        @include respond(phone) {
+            font-size: 2.5rem;
+            top: 20%;
+            left: 6.5%;
+        }
+    }
+    &__about-intro {
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--color-white);
+        position: absolute;
+        top: 48.5%;
+        left: 42%;
+        @include respond(tab-port) {
+            left: 45%;
+        }
+        @include respond(phone) {
+            font-size: 2.5rem;
+            top: 24%;
+            left: 36%;
+        }
+        @include respond(small-screen) {
+            top: 22%;
+        }
+    }
+    &__partner {
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--color-white);
+        position: absolute;
+        top: 50.5%;
+        left: 40%;
+        @include respond(tab-port) {
+            left: 45%;
+        }
+        @include respond(phone) {
+            font-size: 2.5rem;
+            top: 21%;
+            left: 26%;
+        }
+        @include respond(small-screen) {
+            top: 20%;
+        }
+    }
+    &__primary {
+        font-size: 3vw;
+        font-weight: 600;
+        text-align: left;
+        color: var(--color-primary);
+        @include respond(phone) {
+            font-size: 2.8rem;
+        }
+        &--experience {
+            color: var(--color-secondary);
+        }
+        &--deliver {
+            color: var(--color-tertiary);
+        }
+    }
+    &__steps {
+        font-size: var(--heading-secondary-font);
+        font-weight: 400;
+        text-align: center;
+        color: var(--color-grey-dark-3);
+        margin-top: 5rem;
+        &--sub {
+            color: var(--color-primary);
+            text-align: left;
+            margin-top: 5rem;
+        }
+    }
+    &__form {
+        font-size: 2rem;
+        // text-align: left;
+        color: var(--color-white);
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+    &__download {
+        font-family: var(--light-font);
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--color-black);
+        text-transform: capitalize;
+        margin: 5rem 0;
+        text-align: center;
+    }
+    &__about {
+        font-family: var(--light-font);
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--color-grey-dark-3);
+        &--intro {
+            color: var(--color-grey-dark-1);
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+    &__partner {
+        @include respond(phone) {
+            text-align: left;
+            margin-top: 2rem;
+        }
+    }
+    &__overview {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-secondary);
+    }
+    &__sub-s {
+        font-size: 1.3rem;
+        font-weight: 500;
+        font-family: var(--light-font);
+        color: var(--color-grey-dark-1);
+        text-transform: capitalize;
+        text-align: center;
+    }
+}
+
+.paragraph {
+    &__heading {
+        font-size: var(--default-font-size);
+        font-weight: 600;
+        animation: moveUp 2s cubic-bezier(.17, .67, .71, .8);
+    }
+    &__heading-steps {
+        font-size: var(--default-font-size);
+        font-weight: 600;
+        position: relative;
+        bottom: 4rem;
+        left: .5rem;
+        text-align: left;
+        color: var(--color-white);
+        animation: moveUp 2s cubic-bezier(.17, .67, .71, .8);
+    }
+    &__downloads {
+        text-align: center;
+        margin-right: 3rem;
+    }
+    &__text {
+        font-family: var(--light-font);
+        font-size: var(--default-font-size);
+        font-weight: 400;
+        @include respond(phone) {
+            text-align: left;
+        }
+        &--center {
+            text-align: center;
+            padding: 0 22rem;
+            @include respond(phone) {
+                padding: 0 0;
+            }
+        }
+    }
+    &__story {
+        font-family: var(--light-font);
+        font-size: var(--default-font-size);
+        font-weight: 400;
+        @include respond(phone) {
+            text-align: justify;
+        }
+    }
+    &__text-s {
+        font-family: var(--light-font);
+        color: var(--color-grey-dark-1);
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+.bold {
+    font-family: 'Gilroy Extrabold';
+    font-weight: 600;
+    margin-bottom: .8rem;
+}

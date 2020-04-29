@@ -1,0 +1,34 @@
+.step {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-grey-dark-1);
+    text-align: center;
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    &__card {
+        margin: 0 2.7rem;
+        border-radius: .6rem;
+        width: 25.8rem;
+        height: 30.5rem;
+        background-color: var(--color-white);
+        box-shadow: 0 0 .9rem rgba(#000000, .2);
+        @include respond(phone) {
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &__img {
+        height: 17.9rem;
+        // animation: fadeInImage 2s cubic-bezier(.17, .67, .71, .8);
+    }
+    // &__image {
+    // margin: 4rem 10rem;
+    // }
+    &__text {
+        margin: -2.6rem 2rem;
+    }
+}

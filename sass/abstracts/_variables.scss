@@ -1,0 +1,41 @@
+@import url(//db.onlinewebfonts.com/c/00d5a78493aed4b11e2584ad7cceee49?family=Gilroy+ExtraBold);
+@font-face {
+    font-family: "Gilroy Light";
+    src: url("../css/fonts/gilroy-light.otf");
+}
+
+@font-face {
+    font-family: "Gilroy Extrabold";
+    src: url("../css/fonts/gilroy-extrabold.otf");
+}
+
+:root {
+    --color-primary: #2C2D84;
+    --color-secondary: #f7a12f;
+    --color-tertiary: #4CB9B2;
+    --color-white: #ffffff;
+    --color-light: #F5F8FF;
+    --color-black: #000000;
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+    --button-border-radius: .3rem;
+    --heading-primary-font: 3rem;
+    --heading-secondary-font: 2.8rem;
+    --default-font-size: 1.6rem;
+    --light-font: 'Gilroy Light';
+}
+
+$button-box-shadow: 0 .9rem 1.5rem rgba(7,
+7,
+7,
+0.39);
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.35em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 31.25em; //500px

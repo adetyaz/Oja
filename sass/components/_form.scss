@@ -1,0 +1,109 @@
+.form {
+    font-family: var(--light-font);
+    font-size: var(--default-font-size);
+    background-color: var(--color-white);
+    border-radius: .3rem;
+    box-shadow: 0 .3rem .5rem rgba(#000000, .3);
+    height: 72rem;
+    width: 26%;
+    padding: 6rem .2rem;
+    margin-right: 6rem;
+    margin-top: 3.5rem;
+    @include respond(tab-land-card) {
+        width: 33%;
+        height: 63rem;
+        padding: 3rem .2rem;
+        margin-right: 6rem;
+        margin-top: 8.5rem;
+    }
+    @include respond(tab-port) {
+        width: 35%;
+    }
+    @include respond(phone) {
+        margin-right: 0;
+        margin-left: .5rem;
+        margin-top: 12rem;
+        height: 66rem;
+        width: 96%;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+    &__logo-box {
+        position: relative;
+        flex: 0 0 50%;
+    }
+    &__logo {
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        left: 2rem;
+        top: 6rem;
+        @include respond(tab-land-card) {
+            top: 16rem;
+        }
+        @include respond(phone) {
+            left: -2rem;
+            top: -3rem;
+        }
+    }
+    &__heading {
+        position: absolute;
+        top: 60%;
+        padding: 20rem 2rem;
+        @include respond(tab-land-card) {
+            padding: 15rem 2rem;
+        }
+        @include respond(tab-port) {
+            padding: 13rem 2rem;
+        }
+        @include respond(phone) {
+            padding: 5rem 0;
+            left: 24%;
+        }
+    }
+    &__text {
+        text-align: center;
+        color: var(--color-white);
+    }
+    &__group {
+        position: relative;
+        left: 7%;
+        @include respond(phone) {
+            left: 7%;
+        }
+    }
+    &__input {
+        margin-bottom: 3rem;
+        height: 4rem;
+        width: 85%;
+        font-size: inherit;
+        font-family: inherit;
+        padding: 0 1rem;
+        text-transform: capitalize;
+        border: none;
+        outline: .8px solid var(--color-grey-light-3);
+        border-bottom: 1px solid transparent;
+        border-radius: .3rem;
+        display: block;
+        transition: all .2s;
+        // @include respond(small-screen) {
+        //     // margin-left: -8rem;
+        // }
+        &:focus {
+            border-bottom: 1px solid var(--color-tertiary);
+            outline: none;
+            background-color: var(--color-light);
+        }
+        &::-webkit-input-placeholder {
+            color: var(--color-grey-dark-2);
+        }
+        &--description {
+            height: 12rem;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.intro-about-section {
+    margin-top: -8rem;
+}
+
+.intro-section-partner {
+    margin-top: -8rem;
+}
+
+.step-section {
+    background-color: var(--color-white);
+    @include respond(phone) {
+        margin-top: -44rem;
+        padding: .5rem 6.5rem;
+    }
+}
+
+.section-innovate {
+    padding: 8rem 10rem;
+    background-color: var(--color-light);
+    @include respond(phone) {
+        padding: 8rem 0;
+    }
+}
+
+.section-experience {
+    padding: 8rem 10rem;
+    background-color: var(--color-white);
+    @include respond(phone) {
+        padding: 8rem 0;
+    }
+}
+
+.section-deliver {
+    padding: 8rem 10rem;
+    background-color: var(--color-light);
+    @include respond(phone) {
+        padding: 8rem 0;
+    }
+}
+
+.section-partners {
+    padding: 0 4rem;
+    background-color: var(--color-white);
+}
+
+.section-download {
+    padding: 0 15rem;
+    background-color: var(--color-white);
+    z-index: 5;
+    margin: 10rem 0;
+}
+
+.section-subscribe {
+    padding: 5rem 18rem;
+    background-color: var(--color-light);
+    @include respond(tab-pad) {
+        padding: 5rem 10rem;
+    }
+    @include respond(phone) {
+        padding: 5rem 3rem;
+    }
+}
+
+.section-values {
+    padding: 8rem 6rem;
+    background-color: var(--color-white);
+}
+
+.section-about {
+    padding: 2rem 4rem;
+    background-color: var(--color-white);
+}
+
+.section-form {
+    margin: 3.5rem 0;
+    padding: 3rem 0;
+    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581073566/partner_form_ywjpye.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 85rem;
+    @include respond(phone) {
+        padding: 3rem 3rem;
+        background-size: cover;
+    }
+}

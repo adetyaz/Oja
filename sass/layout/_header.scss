@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+    font-size: 2.2rem;
+    //display: flex;
+    display: grid;
+    justify-content: end;
+    background-color: var(--color-white);
+    transition: all .8s cubic-bezier(.77, .43, .65, .98);
+    height: 8rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffffb9;
+    z-index: 20;
+    margin-bottom: 4rem;
+}
+
+.logo-box {
+    position: absolute;
+    cursor: pointer;
+    color: var(--color-primary);
+    animation: moveInLeft 2s cubic-bezier(.17, .67, .71, .8);
+}
+
+.logo {
+    height: 4.5rem;
+    width: 7.5rem;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+}

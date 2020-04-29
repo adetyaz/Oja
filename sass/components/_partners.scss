@@ -1,0 +1,10 @@
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include border;
+    &__img {
+        height: 6rem;
+        width: 7.5rem;
+    }
+}

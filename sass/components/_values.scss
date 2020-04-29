@@ -1,0 +1,41 @@
+.value {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-grey-dark-2);
+    text-align: center;
+    @include respond(tab-land-card) {
+        flex-wrap: wrap;
+    }
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    &__stories {
+        @include respond(tab-land-card) {
+            flex: 0 0 40%;
+        }
+    }
+    &__card {
+        height: 32rem;
+        width: 28rem;
+        border: 1px solid var(--color-grey-light-3);
+        border-radius: .4rem;
+        padding: 2rem 1rem;
+        box-shadow: 0 .2rem .3rem rgba(27, 58, 233, 0.2);
+        @include respond(tab-land-card) {
+            margin: 2.5rem 6.5rem;
+        }
+        @include respond(phone) {
+            margin: 2rem 2rem;
+        }
+    }
+    &__images {
+        position: relative;
+        margin: 1rem 0;
+    }
+    &__icons {
+        width: 6rem;
+        height: 6rem;
+        color: var(--color-secondary) .5;
+    }
+}

@@ -1,0 +1,120 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--color-grey-dark-2);
+    margin-left: 2rem;
+    @include respond(phone) {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    &__text {
+        flex: 0 0 54%;
+        padding-left: 8.5rem;
+        @include respond(phone) {
+            flex: 0;
+            padding-left: 0;
+        }
+        @include respond(small-screen) {
+            text-align: center;
+            padding-left: 1.5rem;
+        }
+    }
+    &__img {
+        // animation: fadeInImage 2s cubic-bezier(.17, .67, .71, .8);
+        @include respond(tab-port) {
+            width: 48rem;
+        }
+        @include respond(small-screen) {
+            width: 44rem;
+        }
+    }
+}
+
+@mixin border {
+    border-bottom: 1px solid var(--color-grey-light-4);
+    border-top: 1px solid var(--color-grey-light-4);
+}
+
+@mixin intro-image {
+    height: 50rem;
+    width: 50vw;
+    // animation: fadeInImage 2s cubic-bezier(.17, .67, .71, .8);
+    @include respond(phone) {
+        display: none;
+        // height: 50rem;
+        // width: 83vw;
+    }
+}
+
+//media query manager
+
+/*
+0 - 600px: phone
+600 - 900px: tablet potrait
+900 - 1200px: tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px = :  big desktop
+
+1em = 16px
+
+order: base > typography > general layout + grid > page layout > components
+
+*/
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint==ss-screen {
+        @media (max-width: 23.75em) {
+            @content
+        }
+        ; //450px
+    }
+    @if $breakpoint==small-screen {
+        @media (max-width: 28.125em) {
+            @content
+        }
+        ; //450px
+    }
+    @if $breakpoint==phone {
+        @media (max-width: 37.5em) {
+            @content
+        }
+        ; //600px
+    }
+    @if $breakpoint==tab-pad {
+        @media (max-width: 46.875em) {
+            @content
+        }
+        ; //750px
+    }
+    @if $breakpoint==tab-port-mid {
+        @media (max-width: 53.125em) {
+            @content
+        }
+        ; //850px
+    }
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {
+            @content
+        }
+        ; //900px
+    }
+    @if $breakpoint==tab-land-card {
+        @media (max-width: 70em) {
+            @content
+        }
+        ; //1120px
+    }
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {
+            @content
+        }
+        ; //1200px
+    }
+    @if $breakpoint==big-desktop {
+        @media (min-width: 112.5em) {
+            @content
+        }
+        ; //1800
+    }
+}

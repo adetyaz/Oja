@@ -4,22 +4,20 @@
     //display: flex;
     display: grid;
     justify-content: end;
-    background-color: var(--color-white);
+    background-color: transparent;
     transition: all .8s cubic-bezier(.77, .43, .65, .98);
-    height: 8rem;
-    margin-bottom: 2rem;
-    overflow: hidden;
+    margin-bottom: -8rem;
+    z-index: 2;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #ffffffb9;
-    z-index: 20;
-    margin-bottom: 4rem;
-}
-
+// .sticky {
+//     position: fixed;
+//     background-color: #ffffffb9;
+//     z-index: 10;
+//     display: grid;
+//     justify-content: end;
+//     box-shadow: 0 1rem .5rem rgba(#000000, .25)
+// }
 .logo-box {
     position: absolute;
     cursor: pointer;

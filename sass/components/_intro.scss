@@ -1,14 +1,17 @@
 .intro {
-    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 85rem;
-    @include respond(tab-port) {
-        margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text-content {
+        flex: 0 0 50%;
+        z-index: 2;
     }
-    @include respond(phone) {
-        height: 90rem;
-        margin-top: 0;
+    &__image-content {
+        margin-top: 8rem;
+        z-index: 2;
+    }
+    &__image {
+        width: 25rem;
     }
 }
 

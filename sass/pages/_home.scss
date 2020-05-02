@@ -1,5 +1,25 @@
-.intro-about-section {
-    margin-top: -8rem;
+.intro-section {
+    background: linear-gradient(to top, #22c1c3, #fdbb2d);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85rem;
+    clip-path: polygon(0 0, 100% 0%, 100% 66%, 0 73%);
+    padding: 5rem 0;
+    position: relative;
+    &::before {
+        content: '';
+        background: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 85rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: .1;
+    }
 }
 
 .intro-section-partner {

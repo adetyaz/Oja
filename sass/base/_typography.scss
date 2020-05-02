@@ -1,24 +1,9 @@
 .heading {
-    // animation: moveUp 2s cubic-bezier(.17, .67, .71, .8);
-    animation-duration: 2s;
-    animation-iteration-count: 1s;
     &__intro {
         font-size: 3rem;
         font-weight: 600;
         text-align: center;
         color: var(--color-white);
-        position: absolute;
-        top: 55%;
-        left: 30%;
-        @include respond(tab-port) {
-            top: 24%;
-            left: 23%;
-        }
-        @include respond(phone) {
-            font-size: 2.5rem;
-            top: 20%;
-            left: 6.5%;
-        }
     }
     &__about-intro {
         font-size: 3rem;
@@ -142,7 +127,7 @@
     &__heading {
         font-size: var(--default-font-size);
         font-weight: 600;
-        animation: moveUp 2s cubic-bezier(.17, .67, .71, .8);
+        color: var(--color-white);
     }
     &__heading-steps {
         font-size: var(--default-font-size);

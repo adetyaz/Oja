@@ -144,6 +144,12 @@ main {
   .heading__primary--deliver {
     color: var(--color-tertiary); }
 
+.heading__cta {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--color-white); }
+
 .heading__steps {
   font-size: var(--heading-secondary-font);
   font-weight: 400;
@@ -166,10 +172,12 @@ main {
   font-family: var(--light-font);
   font-size: 2rem;
   font-weight: 500;
-  color: var(--color-black);
+  color: var(--color-white);
   text-transform: capitalize;
-  margin: 5rem 0;
-  text-align: center; }
+  margin: 6rem 0;
+  text-align: center;
+  z-index: 2;
+  position: relative; }
 
 .heading__about {
   font-family: var(--light-font);
@@ -390,25 +398,23 @@ main {
 .btn-join, .btn-join:link, .btn-join:visited {
   cursor: pointer;
   text-align: center;
-  height: 6rem;
-  width: 10rem;
+  height: 5rem;
+  width: 15rem;
   text-decoration: none;
-  border-radius: var(--button-border-radius);
-  border: none;
+  border-radius: 2rem;
+  border: 1px solid var(--color-white);
   display: inline-block;
   font-family: var(--light-font);
   font-size: var(--default-font-size);
-  background-color: var(--color-primary);
+  background-color: transparent;
   color: var(--color-white);
-  padding: 1.6rem 0; }
+  padding: 1rem 0;
+  transition: all 2ms ease-in; }
   .btn-join__home, .btn-join:link__home, .btn-join:visited__home {
     background-color: var(--color-secondary); }
   .btn-join:hover, .btn-join:link:hover, .btn-join:visited:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.9rem 1.5rem rgba(7, 7, 7, 0.39); }
-  .btn-join:active, .btn-join:link:active, .btn-join:visited:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.9rem 1.5rem rgba(7, 7, 7, 0.39); }
+    background-color: var(--color-white);
+    color: var(--color-primary); }
 
 .btn-submit, .btn-submit:link, .btn-submit:visited {
   cursor: pointer;
@@ -430,6 +436,15 @@ main {
   .btn-submit:active, .btn-submit:link:active, .btn-submit:visited:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.9rem 1.5rem rgba(7, 7, 7, 0.39); }
+
+.cta {
+  flex: 0 0 43%; }
+  .cta__image-content {
+    position: relative;
+    left: 4rem;
+    top: 1rem; }
+  .cta__image {
+    width: 70rem; }
 
 .deliver {
   display: flex;
@@ -469,22 +484,6 @@ main {
   @media (max-width: 37.5em) {
     .download__flex {
       flex-direction: column; } }
-
-.download__app-stores {
-  position: relative;
-  left: 37rem;
-  display: inline; }
-  .download__app-stores--img {
-    text-align: center; }
-  @media (max-width: 56.25em) {
-    .download__app-stores {
-      left: 15rem; } }
-  @media (max-width: 37.5em) {
-    .download__app-stores {
-      left: 3rem; } }
-  @media (max-width: 28.125em) {
-    .download__app-stores {
-      left: 0; } }
 
 .download__cards {
   display: flex;
@@ -1136,3 +1135,11 @@ main {
     .section-form {
       padding: 3rem 3rem;
       background-size: cover; } }
+
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left, #3123f5d8, #021c7944), url("../../img/cool-background.png");
+  background-repeat: no-repeat;
+  height: 90.9vh; }

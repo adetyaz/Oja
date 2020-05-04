@@ -53,28 +53,25 @@
     &:visited {
         cursor: pointer;
         text-align: center;
-        height: 6rem;
-        width: 10rem;
+        height: 5rem;
+        width: 15rem;
         text-decoration: none;
-        border-radius: var(--button-border-radius);
-        border: none;
+        border-radius: 2rem;
+        border: 1px solid var(--color-white);
         display: inline-block;
         font-family: var(--light-font);
         font-size: var(--default-font-size);
-        background-color: var(--color-primary);
+        background-color: transparent;
         color: var(--color-white);
-        padding: 1.6rem 0;
+        padding: 1rem 0;
+        transition: all 2ms ease-in;
         &__home {
             background-color: var(--color-secondary);
         }
         // animation: moveUp 2s cubic-bezier(.17, .67, .71, .8);
         &:hover {
-            transform: translateY(-.3rem);
-            box-shadow: $button-box-shadow;
-        }
-        &:active {
-            transform: translateY(-.1rem);
-            box-shadow: $button-box-shadow;
+            background-color: var(--color-white);
+            color: var(--color-primary);
         }
     }
 }

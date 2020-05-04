@@ -8,23 +8,6 @@
             flex-direction: column;
         }
     }
-    &__app-stores {
-        position: relative;
-        left: 37rem;
-        display: inline;
-        &--img {
-            text-align: center;
-        }
-        @include respond(tab-port) {
-            left: 15rem;
-        }
-        @include respond(phone) {
-            left: 3rem;
-        }
-        @include respond(small-screen) {
-            left: 0;
-        }
-    }
     &__cards {
         display: flex;
         flex-direction: column;

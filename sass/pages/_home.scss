@@ -104,3 +104,12 @@
         background-size: cover;
     }
 }
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, #3123f5d8, #021c7944), url("../../img/cool-background.png");
+    background-repeat: no-repeat;
+    height: 90.9vh;
+}

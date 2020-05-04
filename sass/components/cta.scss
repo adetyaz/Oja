@@ -1,0 +1,11 @@
+.cta {
+    flex: 0 0 43%;
+    &__image-content {
+        position: relative;
+        left: 4rem;
+        top: 1rem;
+    }
+    &__image {
+        width: 70rem;
+    }
+}

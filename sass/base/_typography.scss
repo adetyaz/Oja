@@ -2,7 +2,6 @@
     &__intro {
         font-size: 3rem;
         font-weight: 600;
-        text-align: center;
         color: var(--color-white);
     }
     &__about-intro {
@@ -65,6 +64,7 @@
         font-weight: 700;
         text-align: left;
         color: var(--color-white);
+        text-transform: capitalize;
     }
     &__steps {
         font-size: var(--heading-secondary-font);

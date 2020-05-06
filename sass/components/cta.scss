@@ -1,11 +1,13 @@
 .cta {
     flex: 0 0 43%;
+    position: relative;
+    left: 6rem;
     &__image-content {
         position: relative;
         left: 4rem;
         top: 1rem;
     }
     &__image {
-        width: 70rem;
+        width: 83.7rem;
     }
 }

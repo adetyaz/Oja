@@ -88,7 +88,6 @@ main {
 .heading__intro {
   font-size: 3rem;
   font-weight: 600;
-  text-align: center;
   color: var(--color-white); }
 
 .heading__about-intro {
@@ -148,7 +147,8 @@ main {
   font-size: 3rem;
   font-weight: 700;
   text-align: left;
-  color: var(--color-white); }
+  color: var(--color-white);
+  text-transform: capitalize; }
 
 .heading__steps {
   font-size: var(--heading-secondary-font);
@@ -438,13 +438,15 @@ main {
     box-shadow: 0 0.9rem 1.5rem rgba(7, 7, 7, 0.39); }
 
 .cta {
-  flex: 0 0 43%; }
+  flex: 0 0 43%;
+  position: relative;
+  left: 6rem; }
   .cta__image-content {
     position: relative;
     left: 4rem;
     top: 1rem; }
   .cta__image {
-    width: 70rem; }
+    width: 83.7rem; }
 
 .deliver {
   display: flex;
@@ -496,8 +498,8 @@ main {
       margin-top: 5rem; } }
 
 .download__card {
-  height: 6.5rem;
-  width: 60%;
+  height: 8.5rem;
+  width: 75%;
   border-radius: .55rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   background-color: var(--color-white);
@@ -519,7 +521,7 @@ main {
   position: relative;
   left: 1rem;
   margin-right: 2.8rem;
-  margin-top: 1rem; }
+  margin-top: 2.5rem; }
 
 .download__icons-img {
   width: 3.5rem;
@@ -704,12 +706,21 @@ main {
   align-items: center; }
   .intro__text-content {
     flex: 0 0 50%;
-    z-index: 2; }
+    position: relative;
+    right: 11rem;
+    bottom: 3rem; }
   .intro__image-content {
     margin-top: 8rem;
-    z-index: 2; }
+    z-index: 1; }
   .intro__image {
     width: 25rem; }
+  .intro__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem; }
+  .intro__icon:not(:last-child) {
+    margin-right: 2rem; }
 
 .intro-bout {
   background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072782/about_oja_rfo91m.png");
@@ -950,7 +961,7 @@ main {
     font-weight: 200;
     transition: all 0.6s cubic-bezier(0.03, 0.93, 1, 0.77);
     text-decoration: none;
-    color: var(--color-primary); }
+    color: var(--color-white); }
     .nav__link--2 {
       color: var(--color-secondary); }
     .nav__link:hover {
@@ -1043,26 +1054,26 @@ main {
     transform: scale(0.9); }
 
 .intro-section {
-  background: linear-gradient(to top, #22c1c3, #fdbb2d);
+  background: linear-gradient(to bottom, #2241f3af, #6d93fad7, #ffffffb9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
   background-repeat: no-repeat;
   background-position: center;
-  height: 85rem;
-  clip-path: polygon(0 0, 100% 0%, 100% 66%, 0 73%);
+  background-size: cover;
+  height: 70rem;
   padding: 5rem 0;
   position: relative; }
   .intro-section::before {
     content: '';
-    background: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
+    background: url("../../img/wave.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 85rem;
+    height: 53rem;
+    width: 256rem;
     position: absolute;
-    top: 0;
+    top: 38%;
     left: 0;
     bottom: 0;
-    right: 0;
-    opacity: .1; }
+    right: 0; }
 
 .intro-section-partner {
   margin-top: -8rem; }
@@ -1142,4 +1153,5 @@ main {
   justify-content: center;
   background: linear-gradient(to left, #3123f5d8, #021c7944), url("../../img/cool-background.png");
   background-repeat: no-repeat;
-  height: 90.9vh; }
+  background-size: cover;
+  height: 45.7rem; }

@@ -4,14 +4,29 @@
     align-items: center;
     &__text-content {
         flex: 0 0 50%;
-        z-index: 2;
+        position: relative;
+        right: 11rem;
+        bottom: 3rem;
     }
     &__image-content {
         margin-top: 8rem;
-        z-index: 2;
+        z-index: 1;
     }
     &__image {
         width: 25rem;
+    }
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    &__icon {
+        // height: 4rem;
+        // width: 4rem;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
     }
 }
 

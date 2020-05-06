@@ -9,20 +9,6 @@
         font-weight: 600;
         text-align: center;
         color: var(--color-white);
-        position: absolute;
-        top: 48.5%;
-        left: 42%;
-        @include respond(tab-port) {
-            left: 45%;
-        }
-        @include respond(phone) {
-            font-size: 2.5rem;
-            top: 24%;
-            left: 36%;
-        }
-        @include respond(small-screen) {
-            top: 22%;
-        }
     }
     &__partner {
         font-size: 3rem;
@@ -89,13 +75,13 @@
     &__download {
         font-family: var(--light-font);
         font-size: 2rem;
-        font-weight: 500;
-        color: var(--color-white);
+        font-weight: 600;
+        color: var(--color-grey-dark-1);
         text-transform: capitalize;
-        margin: 6rem 0;
-        text-align: center;
         z-index: 2;
         position: relative;
+        right: 4rem;
+        bottom: 3rem;
     }
     &__about {
         font-family: var(--light-font);
@@ -122,9 +108,8 @@
         color: var(--color-secondary);
     }
     &__sub-s {
-        font-size: 1.3rem;
-        font-weight: 500;
-        font-family: var(--light-font);
+        font-size: 1.4rem;
+        font-weight: 400;
         color: var(--color-grey-dark-1);
         text-transform: capitalize;
         text-align: center;

@@ -1,5 +1,5 @@
 .intro-section {
-    background: linear-gradient(to bottom, #2241f3af, #6d93fad7, #ffffffb9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -22,8 +22,14 @@
     }
 }
 
+.intro-about-section {
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022921/about_oja_rfo91m_ieswi7.jpg");
+    @include head-background
+}
+
 .intro-section-partner {
-    margin-top: -8rem;
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072188/partner_yn1em6.svg");
+    @include head-background
 }
 
 .step-section {
@@ -68,17 +74,6 @@
     background-color: var(--color-white);
     z-index: 5;
     margin: 10rem 0;
-}
-
-.section-subscribe {
-    padding: 5rem 18rem;
-    background-color: var(--color-light);
-    @include respond(tab-pad) {
-        padding: 5rem 10rem;
-    }
-    @include respond(phone) {
-        padding: 5rem 3rem;
-    }
 }
 
 .section-values {

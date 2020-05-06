@@ -94,21 +94,7 @@ main {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  color: var(--color-white);
-  position: absolute;
-  top: 48.5%;
-  left: 42%; }
-  @media (max-width: 56.25em) {
-    .heading__about-intro {
-      left: 45%; } }
-  @media (max-width: 37.5em) {
-    .heading__about-intro {
-      font-size: 2.5rem;
-      top: 24%;
-      left: 36%; } }
-  @media (max-width: 28.125em) {
-    .heading__about-intro {
-      top: 22%; } }
+  color: var(--color-white); }
 
 .heading__partner {
   font-size: 3rem;
@@ -171,13 +157,13 @@ main {
 .heading__download {
   font-family: var(--light-font);
   font-size: 2rem;
-  font-weight: 500;
-  color: var(--color-white);
+  font-weight: 600;
+  color: var(--color-grey-dark-1);
   text-transform: capitalize;
-  margin: 6rem 0;
-  text-align: center;
   z-index: 2;
-  position: relative; }
+  position: relative;
+  right: 4rem;
+  bottom: 3rem; }
 
 .heading__about {
   font-family: var(--light-font);
@@ -202,9 +188,8 @@ main {
   color: var(--color-secondary); }
 
 .heading__sub-s {
-  font-size: 1.3rem;
-  font-weight: 500;
-  font-family: var(--light-font);
+  font-size: 1.4rem;
+  font-weight: 400;
   color: var(--color-grey-dark-1);
   text-transform: capitalize;
   text-align: center; }
@@ -490,8 +475,9 @@ main {
 .download__cards {
   display: flex;
   flex-direction: column;
-  margin-left: 18rem;
-  flex: 0 0 40%; }
+  position: relative;
+  left: 6rem;
+  bottom: 3rem; }
   @media (max-width: 37.5em) {
     .download__cards {
       margin-left: 0;
@@ -499,11 +485,12 @@ main {
 
 .download__card {
   height: 8.5rem;
-  width: 75%;
-  border-radius: .55rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  width: 85%;
+  border: none;
   background-color: var(--color-white);
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; }
   .download__card:not(:first-child) {
     margin-top: 3.5rem; }
   @media (max-width: 56.25em) {
@@ -519,15 +506,11 @@ main {
 
 .download__icons {
   position: relative;
-  left: 1rem;
-  margin-right: 2.8rem;
-  margin-top: 2.5rem; }
+  margin-bottom: 3rem; }
 
-.download__icons-img {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  background-color: rgba(255, 153, 0, 0.267); }
+.download__icon {
+  font-size: 3rem;
+  color: var(--color-primary); }
 
 @media (max-width: 56.25em) {
   .download__img {
@@ -708,7 +691,7 @@ main {
     flex: 0 0 50%;
     position: relative;
     right: 11rem;
-    bottom: 3rem; }
+    top: 3rem; }
   .intro__image-content {
     margin-top: 8rem;
     z-index: 1; }
@@ -718,29 +701,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem; }
+    margin-top: 6rem;
+    margin-right: 30rem; }
   .intro__icon:not(:last-child) {
     margin-right: 2rem; }
 
-.intro-bout {
-  background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072782/about_oja_rfo91m.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 85rem; }
-  @media (max-width: 37.5em) {
-    .intro-bout {
-      height: 57rem;
-      background-size: contain; } }
+.intro-about {
+  position: relative;
+  top: 15rem; }
 
 .intro-partner {
-  background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072188/partner_yn1em6.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 85rem; }
-  @media (max-width: 37.5em) {
-    .intro-partner {
-      height: 57rem;
-      background-size: contain; } }
+  position: relative;
+  top: 15rem; }
 
 .partners {
   display: flex;
@@ -1054,7 +1026,7 @@ main {
     transform: scale(0.9); }
 
 .intro-section {
-  background: linear-gradient(to bottom, #2241f3af, #6d93fad7, #ffffffb9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
+  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1075,8 +1047,19 @@ main {
     bottom: 0;
     right: 0; }
 
+.intro-about-section {
+  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022921/about_oja_rfo91m_ieswi7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35rem; }
+
 .intro-section-partner {
-  margin-top: -8rem; }
+  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072188/partner_yn1em6.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35rem; }
 
 .step-section {
   background-color: var(--color-white); }
@@ -1115,16 +1098,6 @@ main {
   background-color: var(--color-white);
   z-index: 5;
   margin: 10rem 0; }
-
-.section-subscribe {
-  padding: 5rem 18rem;
-  background-color: var(--color-light); }
-  @media (max-width: 46.875em) {
-    .section-subscribe {
-      padding: 5rem 10rem; } }
-  @media (max-width: 37.5em) {
-    .section-subscribe {
-      padding: 5rem 3rem; } }
 
 .section-values {
   padding: 8rem 6rem;

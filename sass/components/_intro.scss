@@ -6,7 +6,7 @@
         flex: 0 0 50%;
         position: relative;
         right: 11rem;
-        bottom: 3rem;
+        top: 3rem;
     }
     &__image-content {
         margin-top: 8rem;
@@ -19,7 +19,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 6rem;
+        margin-right: 30rem;
     }
     &__icon {
         // height: 4rem;
@@ -30,24 +31,10 @@
     }
 }
 
-.intro-bout {
-    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072782/about_oja_rfo91m.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 85rem;
-    @include respond(phone) {
-        height: 57rem;
-        background-size: contain;
-    }
+.intro-about {
+    @include head-image
 }
 
 .intro-partner {
-    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072188/partner_yn1em6.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 85rem;
-    @include respond(phone) {
-        height: 57rem;
-        background-size: contain;
-    }
+    @include head-image
 }

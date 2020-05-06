@@ -11,8 +11,9 @@
     &__cards {
         display: flex;
         flex-direction: column;
-        margin-left: 18rem;
-        flex: 0 0 40%;
+        position: relative;
+        left: 6rem;
+        bottom: 3rem;
         @include respond(phone) {
             margin-left: 0;
             margin-top: 5rem;
@@ -20,11 +21,12 @@
     }
     &__card {
         height: 8.5rem;
-        width: 75%;
-        border-radius: .55rem;
-        box-shadow: 0 0 1rem rgba(#000000, .2);
+        width: 85%;
+        border: none;
         background-color: var(--color-white);
         display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
         &:not(:first-child) {
             margin-top: 3.5rem;
         }
@@ -41,15 +43,11 @@
     }
     &__icons {
         position: relative;
-        left: 1rem;
-        margin-right: 2.8rem;
-        margin-top: 2.5rem;
+        margin-bottom: 3rem;
     }
-    &__icons-img {
-        width: 3.5rem;
-        height: 3.5rem;
-        border-radius: 50%;
-        background-color: rgba(255, 153, 0, 0.267);
+    &__icon {
+        font-size: 3rem;
+        color: var(--color-primary);
     }
     &__img {
         @include respond(tab-port) {

@@ -32,6 +32,18 @@
     }
 }
 
+@mixin head-image {
+    position: relative;
+    top: 15rem;
+}
+
+@mixin head-background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+}
+
 @mixin border {
     border-bottom: 1px solid var(--color-grey-light-4);
     border-top: 1px solid var(--color-grey-light-4);

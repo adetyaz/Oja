@@ -11,7 +11,7 @@
         color: var(--color-white);
         @include respond(phone) {
             position: relative;
-            top: 5rem;
+            top: 10rem;
         }
     }
     &__partner {
@@ -23,7 +23,7 @@
         top: 50.5%;
         left: 40%;
         @include respond (phone) {
-            top: 5rem;
+            top: 10rem;
             left: 23%;
         }
     }
@@ -158,7 +158,7 @@
             top: 45rem;
             @include respond(phone) {
                 padding: 0 .3rem;
-                top: 40rem;
+                top: 28rem;
             }
         }
     }

@@ -35,13 +35,16 @@
 @mixin head-image {
     position: relative;
     top: 15rem;
+    @include respond(phone) {
+        top: 5rem;
+    }
 }
 
 @mixin head-background {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 35rem;
+    height: 25rem;
 }
 
 @mixin border {

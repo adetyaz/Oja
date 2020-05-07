@@ -12,48 +12,4 @@
             flex: 0;
         }
     }
-    &__image {
-        position: relative;
-        @include respond(phone) {
-            left: 7%;
-        }
-    }
-    &__img {
-        width: 45%;
-        position: relative;
-        transition: all 1s cubic-bezier(.17, .67, .71, .8);
-        // animation: fadeInImage 2s cubic-bezier(.17, .67, .71, .8);
-        @include respond(phone) {
-            width: 30%;
-        }
-        &:hover {
-            transform: translateY(4px) scale(1.1);
-            z-index: 8;
-        }
-        &--1 {
-            z-index: 3;
-            left: 6rem;
-            @include respond(phone) {
-                left: 7rem;
-            }
-        }
-        &--2 {
-            z-index: 2;
-            right: 5rem;
-            top: 3rem;
-            @include respond(phone) {
-                right: 0;
-                top: 0;
-            }
-        }
-        &--3 {
-            z-index: 1;
-            left: 11rem;
-            bottom: 10rem;
-            @include respond(phone) {
-                left: -9rem;
-                bottom: 0;
-            }
-        }
-    }
 }

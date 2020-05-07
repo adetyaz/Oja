@@ -2,6 +2,10 @@
     flex: 0 0 43%;
     position: relative;
     left: 6rem;
+    @include respond(phone) {
+        left: 1rem;
+        top: 13%;
+    }
     &__image-content {
         position: relative;
         left: 4rem;

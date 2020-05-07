@@ -9,6 +9,10 @@
         font-weight: 600;
         text-align: center;
         color: var(--color-white);
+        @include respond(phone) {
+            position: relative;
+            top: 5rem;
+        }
     }
     &__partner {
         font-size: 3rem;
@@ -18,16 +22,9 @@
         position: absolute;
         top: 50.5%;
         left: 40%;
-        @include respond(tab-port) {
-            left: 45%;
-        }
-        @include respond(phone) {
-            font-size: 2.5rem;
-            top: 21%;
-            left: 26%;
-        }
-        @include respond(small-screen) {
-            top: 20%;
+        @include respond (phone) {
+            top: 5rem;
+            left: 23%;
         }
     }
     &__primary {
@@ -57,7 +54,7 @@
         font-weight: 400;
         text-align: center;
         color: var(--color-grey-dark-3);
-        margin-top: 5rem;
+        margin-top: 10rem;
         &--sub {
             color: var(--color-primary);
             text-align: left;
@@ -73,27 +70,26 @@
         }
     }
     &__download {
-        font-family: var(--light-font);
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: 400;
         color: var(--color-grey-dark-1);
         text-transform: capitalize;
         z-index: 2;
         position: relative;
         right: 4rem;
         bottom: 3rem;
+        @include respond(phone) {
+            right: 0;
+            bottom: 0;
+        }
     }
     &__about {
         font-family: var(--light-font);
         font-size: 2rem;
         font-weight: 700;
         color: var(--color-grey-dark-3);
-        &--intro {
-            color: var(--color-grey-dark-1);
-            text-transform: uppercase;
-            font-weight: 400;
-            text-align: center;
-        }
+        text-align: center;
+        margin: 2rem 0;
     }
     &__partner {
         @include respond(phone) {
@@ -119,8 +115,13 @@
 .paragraph {
     &__heading {
         font-size: var(--default-font-size);
-        font-weight: 600;
+        font-weight: 400;
         color: var(--color-white);
+        text-align: justify;
+        font-family: var(--light-font);
+        @include respond(phone) {
+            padding: 0 1.5rem;
+        }
     }
     &__heading-steps {
         font-size: var(--default-font-size);
@@ -146,8 +147,11 @@
         &--center {
             text-align: center;
             padding: 0 22rem;
+            position: relative;
+            top: 45rem;
             @include respond(phone) {
-                padding: 0 0;
+                padding: 0 .3rem;
+                top: 40rem;
             }
         }
     }

@@ -39,13 +39,9 @@
     margin-bottom: auto;
     transform: translateY(1rem);
     transition: all 0ms 300ms;
-    left: 90%;
+    margin-right: 2rem;
     z-index: 16;
-    position: fixed;
     margin-top: 3rem;
-    // @include respond(phone){
-    //     display: ;
-    // }
     &::before:hover {
         transition: transform .5s;
         transform: translateY(1px);
@@ -79,7 +75,7 @@
     width: 3rem;
     cursor: pointer;
     display: none;
-    background-color: var(--color-primary);
+    background-color: var(--color-white);
     border-radius: .2rem;
     @include respond(phone) {
         display: inline-block;
@@ -100,7 +96,6 @@
 
 .mobile-nav {
     &__hamburger {
-        position: fixed;
         right: 3.6%;
         top: 1%;
         height: 14.8rem;

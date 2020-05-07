@@ -16,7 +16,8 @@
         bottom: 3rem;
         @include respond(phone) {
             margin-left: 0;
-            margin-top: 5rem;
+            margin-top: 12rem;
+            left: 0;
         }
     }
     &__card {
@@ -47,14 +48,14 @@
     }
     &__icon {
         font-size: 3rem;
-        color: var(--color-primary);
+        color: #4F2AFF;
     }
     &__img {
         @include respond(tab-port) {
             width: 32rem;
         }
         @include respond(phone) {
-            width: 50rem;
+            width: 40rem;
         }
     }
 }

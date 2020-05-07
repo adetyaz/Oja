@@ -6,6 +6,9 @@
     height: 70rem;
     padding: 5rem 0;
     position: relative;
+    @include respond(phone) {
+        height: 95rem;
+    }
     &::before {
         content: '';
         background: url("../../img/wave.svg");
@@ -19,6 +22,10 @@
         left: 0;
         bottom: 0;
         right: 0;
+        @include respond(phone) {
+            height: 72rem;
+            width: 200rem;
+        }
     }
 }
 
@@ -35,7 +42,7 @@
 .step-section {
     background-color: var(--color-white);
     @include respond(phone) {
-        margin-top: -44rem;
+        margin-top: 30rem;
         padding: .5rem 6.5rem;
     }
 }
@@ -83,13 +90,13 @@
 
 .section-about {
     padding: 2rem 4rem;
-    background-color: var(--color-white);
+    background-color: var(--color-grey-light-1);
 }
 
 .section-form {
-    margin: 3.5rem 0;
+    margin-top: 20rem;
     padding: 3rem 0;
-    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581073566/partner_form_ywjpye.svg");
+    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022469/partner_form_l2rr9b.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -108,4 +115,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.7rem;
+    @include respond(phone) {
+        flex-direction: column;
+        height: 78rem;
+    }
 }

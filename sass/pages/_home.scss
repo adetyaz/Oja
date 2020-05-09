@@ -11,7 +11,7 @@
     }
     &::before {
         content: '';
-        background: url("../../img/wave.svg");
+        background: url("https://res.cloudinary.com/oja/image/upload/v1589041701/wave_bta4kp.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -30,12 +30,12 @@
 }
 
 .intro-about-section {
-    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022921/about_oja_rfo91m_ieswi7.jpg");
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/v1589043405/About_image_vzrmwu.png");
     @include head-background
 }
 
 .intro-section-partner {
-    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072188/partner_yn1em6.svg");
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/v1589041681/partner_pqhcmu.svg");
     @include head-background
 }
 
@@ -96,7 +96,7 @@
 .section-form {
     margin-top: 20rem;
     padding: 3rem 0;
-    background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022469/partner_form_l2rr9b.svg");
+    background-image: url("https://res.cloudinary.com/oja/image/upload/v1589041679/partner_form_ppu7ue.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -111,7 +111,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to left, #3123f5d8, #021c7944), url("../../img/cool-background.png");
+    background: linear-gradient(to left, #3123f5d8, #021c7944), url("https://res.cloudinary.com/oja/image/upload/v1589041636/cool-background_d3e63v.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.7rem;

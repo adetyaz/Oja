@@ -127,7 +127,8 @@
         text-align: justify;
         font-family: var(--light-font);
         @include respond(phone) {
-            padding: 0 1.5rem;
+            padding: 0 2rem;
+            margin-left: -2rem;
         }
     }
     &__heading-steps {
@@ -155,7 +156,7 @@
             text-align: center;
             padding: 0 22rem;
             position: relative;
-            top: 45rem;
+            top: 38rem;
             @include respond(phone) {
                 padding: 0 .3rem;
                 top: 28rem;

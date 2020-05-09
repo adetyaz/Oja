@@ -8,9 +8,9 @@ var header = document.getElementById("header"),
 function myFunction() { window.pageYOffset >= sticky ? header.classList.add("sticky") : header.classList.remove("sticky") }
 
 {
-    document.querySelector('.btn-join').addEventListener('click', (e) => {
-        // alert(`we'll get back to you now`);
-        e.preventDefault();
-        document.querySelector('.subscribe__form--input').value = ''
-    })
+    // document.querySelector('.btn-submit').addEventListener('click', (e) => {
+    //     // alert(`we'll get back to you now`);
+    //     e.preventDefault();
+    //     document.querySelector('.form__input').value = ''
+    // })
 }

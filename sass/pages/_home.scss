@@ -115,6 +115,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.7rem;
+    @include respond(tab-land-card) {
+        height: 35.3rem;
+    }
     @include respond(phone) {
         flex-direction: column;
         height: 78rem;

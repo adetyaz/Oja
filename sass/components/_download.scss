@@ -51,10 +51,7 @@
         color: #4F2AFF;
     }
     &__img {
-        @include respond(tab-port) {
-            width: 32rem;
-        }
-        @include respond(phone) {
+        @include respond(tab-land-card) {
             width: 40rem;
         }
     }

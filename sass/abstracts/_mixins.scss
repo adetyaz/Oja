@@ -98,7 +98,7 @@ order: base > typography > general layout + grid > page layout > components
         ; //600px
     }
     @if $breakpoint==tab-pad {
-        @media (max-width: 46.875em) {
+        @media (max-width: 770px) {
             @content
         }
         ; //750px

@@ -206,7 +206,8 @@ main {
   font-family: var(--light-font); }
   @media (max-width: 37.5em) {
     .paragraph__heading {
-      padding: 0 1.5rem; } }
+      padding: 0 2rem;
+      margin-left: -2rem; } }
 
 .paragraph__heading-steps {
   font-size: var(--default-font-size);
@@ -233,7 +234,7 @@ main {
     text-align: center;
     padding: 0 22rem;
     position: relative;
-    top: 45rem; }
+    top: 38rem; }
     @media (max-width: 37.5em) {
       .paragraph__text--center {
         padding: 0 .3rem;
@@ -402,6 +403,15 @@ main {
   flex: 0 0 43%;
   position: relative;
   left: 6rem; }
+  @media (max-width: 70em) {
+    .cta {
+      left: 3rem; } }
+  @media (max-width: 56.25em) {
+    .cta {
+      left: 4rem; } }
+  @media (max-width: 770px) {
+    .cta {
+      left: 7rem; } }
   @media (max-width: 37.5em) {
     .cta {
       left: 1rem;
@@ -412,6 +422,9 @@ main {
     top: 1rem; }
   .cta__image {
     width: 83.7rem; }
+    @media (max-width: 70em) {
+      .cta__image {
+        width: 65.5rem; } }
 
 .deliver {
   display: flex;
@@ -493,11 +506,7 @@ main {
   font-size: 3rem;
   color: #4F2AFF; }
 
-@media (max-width: 56.25em) {
-  .download__img {
-    width: 32rem; } }
-
-@media (max-width: 37.5em) {
+@media (max-width: 70em) {
   .download__img {
     width: 40rem; } }
 
@@ -676,6 +685,9 @@ main {
     position: relative;
     right: 11rem;
     top: 3rem; }
+    @media (max-width: 70em) {
+      .intro__text-content {
+        right: 3rem; } }
     @media (max-width: 37.5em) {
       .intro__text-content {
         right: -1rem;
@@ -683,6 +695,9 @@ main {
   .intro__image-content {
     margin-top: 8rem;
     z-index: 1; }
+    @media (max-width: 770px) {
+      .intro__image-content {
+        margin-top: 10rem; } }
     @media (max-width: 37.5em) {
       .intro__image-content {
         margin-top: 20rem; } }
@@ -697,6 +712,9 @@ main {
     align-items: center;
     margin-top: 6rem;
     margin-right: 30rem; }
+    @media (max-width: 70em) {
+      .intro__icons {
+        margin-right: 20rem; } }
     @media (max-width: 37.5em) {
       .intro__icons {
         margin-right: 0; } }
@@ -1008,7 +1026,7 @@ main {
       height: 95rem; } }
   .intro-section::before {
     content: '';
-    background: url("../../img/wave.svg");
+    background: url("https://res.cloudinary.com/oja/image/upload/v1589041701/wave_bta4kp.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1025,14 +1043,14 @@ main {
         width: 200rem; } }
 
 .intro-about-section {
-  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022921/about_oja_rfo91m_ieswi7.jpg");
+  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/v1589043405/About_image_vzrmwu.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 25rem; }
 
 .intro-section-partner {
-  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072188/partner_yn1em6.svg");
+  background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/v1589041681/partner_pqhcmu.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1087,7 +1105,7 @@ main {
 .section-form {
   margin-top: 20rem;
   padding: 3rem 0;
-  background-image: url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1582022469/partner_form_l2rr9b.svg");
+  background-image: url("https://res.cloudinary.com/oja/image/upload/v1589041679/partner_form_ppu7ue.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1101,10 +1119,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to left, #3123f5d8, #021c7944), url("../../img/cool-background.png");
+  background: linear-gradient(to left, #3123f5d8, #021c7944), url("https://res.cloudinary.com/oja/image/upload/v1589041636/cool-background_d3e63v.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 45.7rem; }
+  @media (max-width: 70em) {
+    .cta-section {
+      height: 35.3rem; } }
   @media (max-width: 37.5em) {
     .cta-section {
       flex-direction: column;

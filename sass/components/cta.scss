@@ -2,6 +2,15 @@
     flex: 0 0 43%;
     position: relative;
     left: 6rem;
+    @include respond(tab-land-card) {
+        left: 3rem;
+    }
+    @include respond(tab-port) {
+        left: 4rem;
+    }
+    @include respond(tab-pad) {
+        left: 7rem;
+    }
     @include respond(phone) {
         left: 1rem;
         top: 13%;
@@ -13,5 +22,8 @@
     }
     &__image {
         width: 83.7rem;
+        @include respond(tab-land-card) {
+            width: 65.5rem;
+        }
     }
 }

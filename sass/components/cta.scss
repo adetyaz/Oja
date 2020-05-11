@@ -19,6 +19,9 @@
         position: relative;
         left: 4rem;
         top: 1rem;
+        @include respond(phone) {
+            top: 4.05rem;
+        }
     }
     &__image {
         width: 83.7rem;

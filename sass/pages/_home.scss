@@ -1,5 +1,5 @@
 .intro-section {
-    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/dx2a1g2mb/image/upload/v1581072180/shopping_intro_mnlyaa.svg");
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/q_auto:eco/v1589041688/shopping_intro_lbq7g0.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,7 +11,7 @@
     }
     &::before {
         content: '';
-        background: url("https://res.cloudinary.com/oja/image/upload/v1589041701/wave_bta4kp.svg");
+        background: url("https://res.cloudinary.com/oja/image/upload/q_auto/v1589041701/wave_bta4kp.svg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -30,12 +30,12 @@
 }
 
 .intro-about-section {
-    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/v1589043405/About_image_vzrmwu.png");
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/q_auto:eco/v1589043405/About_image_vzrmwu.jpg");
     @include head-background
 }
 
 .intro-section-partner {
-    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/v1589041681/partner_pqhcmu.svg");
+    background: linear-gradient(to bottom, #1436f5b6, #4c7cffec, #5b76f0b9), url("https://res.cloudinary.com/oja/image/upload/q_auto:eco/v1589041681/partner_pqhcmu.jpg");
     @include head-background
 }
 
@@ -96,7 +96,7 @@
 .section-form {
     margin-top: 20rem;
     padding: 3rem 0;
-    background-image: url("https://res.cloudinary.com/oja/image/upload/v1589041679/partner_form_ppu7ue.svg");
+    background-image: url("https://res.cloudinary.com/oja/image/upload/q_auto/v1589041679/partner_form_ppu7ue.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
